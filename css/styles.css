@@ -1,0 +1,813 @@
+/* main base styling */
+
+/*
+
+body styling
+
+*/
+body {
+  font-size: 0.8em;
+  /* font-family: sans-serif; */
+  /* font-family: 'Slabo 27px', serif; */
+  font-family: 'Alegreya', serif;
+  /* font: font-style font-variant font-weight font-size/line-height
+  font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit; */
+  /* rgba(red, green, blue, alpha (transparency)0.5) */
+  background-color: #FFFAFA;
+  width: 45em;
+  max-width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/*
+
+links within main page
+
+*/
+a:link {
+  color: #008080;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #2F4F4F;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/*
+
+list styling
+
+*/
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: block;
+  flex-wrap: wrap;
+}
+
+/*
+
+heading styling
+
+*/
+.heading {
+  max-width: 100%;
+}
+
+hr {
+  height: 1px;
+  width: 100%;
+  border: 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+/*
+
+top section styling
+
+*/
+
+.top {
+  padding-left: 1em;
+  padding-right: 1em;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.intro {
+  text-align: center;
+  /* padding-right: 1em; */
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.intro2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.profilePic {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 6em;
+  padding: 5px 5px;
+}
+
+/*
+
+contact info styling
+
+*/
+
+.contactInfo {
+  max-width: 100%;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+/*
+
+view cv button
+
+*/
+
+.cvButton {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+/*
+
+whole cv content styling
+
+*/
+
+.cv {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  flex-wrap: wrap;
+}
+
+.cvContent {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  max-width: 100%;
+  border: 1px outset #ccc;
+  background-color: #fffff3;
+  margin: 0.5em;
+  margin-bottom: 1em;
+  padding: 1em;
+  /*
+
+  cv shadow
+
+  */
+  /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
+  -webkit-box-shadow: 5px 5px 2px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    5px 5px 2px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         5px 5px 2px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=2,MakeShadow=true,ShadowOpacity=0.30);
+ -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=2,MakeShadow=true,ShadowOpacity=0.30)";
+ zoom: 1;
+}
+
+.hide {
+  display: none;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 9;
+}
+
+/*
+
+buttons within cv styling
+
+*/
+button {
+  border: 0;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  width: 8em;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  text-decoration: underline;
+  box-shadow: 0 4px 4px -4px black;
+  /*box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
+  -webkit-box-shadow: 4px 4px 4px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    4px 4px 4px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         4px 4px 4px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
+  position: relative; /* This protects the inner element from being blurred */
+  background-color: white;
+}
+
+button:active {
+  transform: translateY(4px);
+
+}
+
+/*
+
+styling to create hover pointer
+
+*/
+button {
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+}
+
+.descButton {
+  font-size: 0.8em;
+  font-weight: normal;
+  display: none;
+}
+
+/*
+
+skills grid positioning
+
+*/
+.skills {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  max-width: 100%;
+  background-color: #FFFAFA;
+  padding: 0.5em;
+  display: grid;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.skillsButton {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+/*
+
+skills section styling
+
+*/
+
+.skills div {
+  border-bottom: 1px dashed black;
+  /* linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); */
+
+}
+
+.skills div:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+
+}
+
+.skills ul {
+  text-align: center;
+  display: block;
+  flex-wrap: wrap;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.skillset1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.skillset2 {
+  border-bottom: 1px dashed #ccc;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.skillset3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+/*
+
+skills list styling
+
+*/
+.skills ul {
+  font-size: 0.8em;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+/*
+
+work section styling
+
+*/
+
+/*
+
+grid positioning
+
+*/
+
+.workButton {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.descButton {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.experience {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  display: none;
+  max-width: 100%;
+}
+
+/*
+
+employment table styling
+
+*/
+
+.roleDesc ul {
+  display: block;
+  text-align: left;
+}
+
+.experience h5{
+  text-align: center;
+}
+
+.date {
+  padding-right: 1.875em;
+  /* width: 3.125em; */
+}
+
+.company {
+  text-align: center;
+  padding-left: 1.8em;
+}
+
+.role {
+  text-align: right;
+  padding-left: 1.8em;
+}
+
+.jobDesc {
+  font-size: 0.5em;
+  text-align: left;
+}
+
+.jobDesc li {
+  margin: 0;
+  padding: 0;
+}
+
+.note {
+  font-style: italic;
+  font-size: 0.75em;
+}
+
+.noteA {
+  font-size: 0.70em;
+  font-style: italic;
+}
+
+.experience table {
+    max-width: 100%;
+    border-collapse: collapse;
+}
+
+/*
+
+training section styling
+
+*/
+
+/*
+
+grid positioning
+
+*/
+
+.trainButton {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.training {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  display: none;
+}
+
+/*
+
+udacity table styling
+
+*/
+
+.udacity {
+  width: 100%;
+}
+
+.utitle {
+  font-weight: bold;
+  width: 30%;
+}
+
+.syllabus {
+  width: 70%;
+}
+
+/*
+
+education section styling
+
+*/
+
+/*
+
+grid positioning
+
+*/
+
+.eduButton {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+
+.education {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  display: none;
+}
+
+/*
+
+ whitby result table styling
+
+*/
+
+.whitby {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: 14% 12.5% 11.5% 8% 13.5% 14.5% 13.5% 12.5%;
+  max-width: 100%;
+  text-align: center;
+  overflow-y: scroll;
+  width:auto;
+}
+
+.type {
+  width: auto;
+  font-weight: bold;
+  text-align: left;
+}
+
+/*
+
+alevel styling
+
+*/
+
+.alevel {
+  margin-bottom: 1em;
+}
+
+.type.alevel {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.subject.alevel.art {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.award.alevel.art {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.subject.alevel.text {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.award.alevel.text {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+/*
+
+gcse styling
+
+*/
+
+.type.gcse {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.subject.gcse.eng {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.award.gcse.eng {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  padding-right: 1em;
+}
+
+.subject.gcse.math {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.award.gcse.math {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  padding-right: 1em;
+}
+
+.subject.gcse.it {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.award.gcse.it {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  padding-right: 1em;
+}
+
+.subject.gcse.germ {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.award.gcse.germ {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  padding-right: 1em;
+}
+
+.subject.gcse.sci {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.award.gcse.sci {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  padding-right: 1em;
+}
+
+.subject.gcse.text {
+  grid-column-start: 7;
+  grid-column-end: 8;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.award.gcse.text {
+  grid-column-start: 7;
+  grid-column-end: 8;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  padding-right: 1em;
+}
+
+.subject.gcse.his {
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.award.gcse.his {
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  padding-right: 1em;
+}
+
+.gcse {
+  margin-bottom: 1em;
+}
+
+
+/*
+
+personal section styling
+
+*/
+
+/*
+
+grid positioning
+
+*/
+
+
+.hobbyButton {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 9;
+  grid-row-end: 10;
+}
+
+.personal {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 10;
+  grid-row-end: 11;
+  display: none;
+}
+
+/*
+
+footer styling
+
+*/
+.foot hr {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+}
+
+.foot {
+  min-height: 10em;
+  max-width: 100%;
+  margin-top: 5px;
+  text-align: center;
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: 50% 50%;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+}
+
+/*
+
+social logos
+
+*/
+.FBlogo1 img {
+  width: 2.5em;
+  padding-top: 0.4em;
+}
+
+.LinkedInLogo img {
+  width: 3em;
+}
+
+.twitterLogo img {
+  width: 3em;
+}
+
+.society6Logo img {
+  height: 3em;
+}
+
+.CodepenLogo img {
+  height: 3em;
+}
+
+
+/*
+
+footer text styling
+
+ */
+.footText {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.proLinks {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.LinkedInLogo {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.CodepenLogo {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.socialLinks {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.FBlogo1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.twitterLogo {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.society6Logo {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
