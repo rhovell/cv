@@ -11,8 +11,9 @@
 <meta name="description" content="Rachel Hovell CV">
 <!-- style sheets -->
 <link rel="stylesheet" type="text/css" href="css/normalise.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
 <!-- responsive style sheets -->
-<!-- <link rel="stylesheet" type="text/css" href="css/responsive.css"> -->
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
 <!-- google fonts -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 
@@ -31,22 +32,22 @@
     </div>
   </div>
   <div class="page-select" id="pageSelectContainer">
-      <button value="intro" id="introButton" class="page-button intro">
+      <a href="#home"><button value="intro" id="introButton" class="page-button intro">
         <img src="img/main/icons/home.png" title="Introduction" alt="Introduction" class="intro icon">
         <span class="button-text intro">Intro</span>
-      </button>
-      <button value="work" id="workExpButton" class="page-button work">
+      </button></a>
+      <a href="#work"><button value="work" id="workExpButton" class="page-button work">
         <img src="img/main/icons/work.png" title="Work" alt="Work" class="work icon">
         <span class="button-text work">Work</span>
-      </button>
-      <button value="edu" id="eduButton" class="page-button edu">
+      </button></a>
+      <a href="#edu"><button value="edu" id="eduButton" class="page-button edu">
         <img src="img/main/icons/education.png" title="Education" alt="Education" class="edu icon">
         <span class="button-text edu">Education</span>
-      </button>
-      <button value="me" id="meButton" class="page-button me">
+      </button></a>
+      <a href="#me"><button value="me" id="meButton" class="page-button me">
         <img src="img/main/icons/me.png" title="Hobbies and Interests" alt="Hobbies and Interests" class="me icon">
         <span class="button-text me">Me</span>
-      </button>
+      </button></a>
   </div>
 </div>
   <!-- end of header -->
@@ -56,55 +57,75 @@
   <!-- main content area -->
   <div class="main-content scroll-area page-holder">
     <!-- profile box container -->
-    <!-- <div class="profile-container container"> -->
+    <div class="column-1">
       <!-- profile box -->
-      <div class="profile-box">
+      <div class="profile-box card" id="home">
         <!-- profile header -->
         <div class="profile-header-container">
           <div class="header-image-background">
-            <!-- <img src="https://via.placeholder.com/562x150"> -->
           </div>
           <div class="profile-picture">
             <img src="img/main/profile-pic.jpg">
           </div>
-          <div class="profile-title">
+          <div class="profile-title card-title">
             <h2>Rachel Hovell</h2>
             <h3>Front End Web Designer</h3>
             <h4>Stalybridge, Greater Manchester, UK</h4>
           </div>
+          <!-- contact information -->
+          <div class = "contact-info" id = "contactInfo">
+            Contact Me
+          </div>
+          <div class="contact" id="contact">
+            <ul class="contact-list">
+              <li style="padding-bottom:0;">Mobile: <a href="tel:07833258128">07833258128</a></li>
+              <li>Email:<a href = "mailto:r.hovell@live.com"> r.hovell@live.com</a></li>
+            </ul>
+          </div>
           <hr class="title-hr">
           <!-- end of profile header -->
         </div>
+        <!-- profile link section -->
         <div class="profile-links">
           <div class="social-link">
-            <img src="img/social/github.png" class="github logo">
-            <span class="social-title">GitHub</span>
+            <a href = "https://github.com/rhovell" target="_blank" rel="noopener" title="Rachel Hovell on GitHub">
+              <img src="img/social/github.png" class="github logo">
+              <div class="social-title">GitHub</div>
+            </a>
           </div>
           <div class="social-link">
-            <img src="img/social/facebook.png" class="fb logo">
-            <span class="social-title">Facebook</span>
+            <a href = "https://www.facebook.com/rachelswebdesign/" target="_blank" rel="noopener" title="Rachel's Web Design on Facebook">
+              <img src="img/social/facebook.png" class="fb logo">
+              <div class="social-title">Facebook</div>
+            </a>
           </div>
           <div class="social-link">
-            <img src="img/social/linkedin.png" class="linkedin logo">
-            <span class="social-title">LinkedIn</span>
+            <a href = "https://www.linkedin.com/in/rachel-hovell/" target="_blank" rel="noopener" title="Rachel Hovell on Linked In">
+              <img src="img/social/linkedin.png" class="linkedin logo">
+              <div class="social-title">LinkedIn</div>
+            </a>
           </div>
           <div class="social-link">
-            <img src="img/social/codepen.png" class="codepen logo">
-            <span class="social-title">Codepen</span>
+            <a href = "https://codepen.io/Rhovell/#" target="_blank" rel="noopener" title="Rachel Hovell on Codepen">
+              <img src="img/social/codepen.png" class="codepen logo">
+              <div class="social-title">Codepen</div>
+            </a>
           </div>
           <div class="social-link long">
-            <img src="img/main/branding/RED-logo-alone.png" class="red logo">
-            <span class="social-title">Rachel's Eco Design</span>
+            <a href = "https://rhovell.github.io/red/" target="_blank" rel="noopener" title="Rachel Hovell on Codepen">
+              <img src="img/main/branding/RED-logo-alone.png" class="red logo">
+              <div class="social-title center-al" style="text-align:center;">Rachel's Eco Design</div>
+            </a>
           </div>
         </div>
         <!-- profile introduction -->
         <div class="profile-intro" id="intro">
           <p>Front-end web developer and graphic designer currently working at Stockport Grammar School as Interim Web & Digital Media Officer.</p>
-          <div class="see-more-tab">
+          <hr>
+          <div class="see-more-tab" id="seeMoreIntro">
             v See More v
-            <hr>
           </div>
-          <div class="hidden" style="display:none">
+          <div class="hidden" style="display:none" id="hideElements">
             <p>My daily role consists of managing their Wordpress based website using PHP and JavaScript to add new features that help to improve the performance of the website both front and backend. I also build Mailchimp email templates from scratch and I am currently acting as consultant for a new 3rd party website that is in production, ensuring all user needs are met for the team after my contract has ended.</p>
             <p>My coding knowledge lies in HTML, HTML5, CSS, JavaScript, jQuery, PHP, Angular and React JavaScript, ES6, API and Ajax, frameworks such as Yeoman, responsive layouts and design, and command line systems or version control such as Node and Git.</p>
             <p>I am eager to learn new skills and gain as much knowledge as possible. My goal in the coding world is to build educational apps with environmental themes, to teach people of all ages about animals, animal welfare, environmental issues and how they can help. I run my own graphic design company, Rainbow Rach Designs, that also highlights environmental issues, running marketing campaigns through social media platforms such as Wordpress, Facebook, Twitter and Instagram.</p>
@@ -112,11 +133,12 @@
         </div>
         <!-- end of profile box -->
       </div>
-      <!-- <div class="work-box">
-        <div class="work-box-title">
+      <!-- work box -->
+      <div class="work-box card" id="work">
+        <div class="work-box-title  card-title">
           <h3>Work Experience</h3>
         </div>
-        <div class="work-table">
+        <div class="work-table card-table">
           <table>
             <tr>
               <td>
@@ -124,30 +146,395 @@
                   Stockport Grammar School</h4>
                 <h5>Interim Web & Digital Media Officer</h5>
                 <ul>
-                <li>Management of Wordpress website - posting news stories and updating information.</li>
-                <li>Adding new front-end features to the website using PHP and JavaScript.</li>
-                <li>Adding back end tools to improve performance of website and front-end experience.</li>
-                <li>Acting consultant for new website build – ensuring all user needs are met with front end experience optimal.</li>
-                <li>Building Mailchimp email templates from scratch.</li>
-                <li>Photography of school events.</li>
-              </ul>
+                  <li>Management of Wordpress website - posting news stories and updating information.</li>
+                  <li>Adding new front-end features to the website using PHP and JavaScript.</li>
+                  <li>Adding back end tools to improve performance of website and front-end experience.</li>
+                  <li>Acting consultant for new website build – ensuring all user needs are met with front end experience optimal.</li>
+                  <li>Building Mailchimp email templates from scratch.</li>
+                  <li>Photography of school events.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>May 2017 - Jan 2018<br/>
+                Quba & Co</h4>
+                <h5>Assistant Merchandiser</h5>
+                <ul>
+                  <li>Merchandising of stock for stores and online sales</li>
+                  <li>Reporting on sales analysis and forecasting</li>
+                  <li>Raising PO’s for new products, working out sizing ratios</li>
+                  <li>Processing wholesale orders</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>Mar 2017 - May 2017<br/>
+                   Slydes Footwear - Readseapedestrians</h4>
+                   <h5>Merchandiser & Account Manager</h5>
+                   <ul>
+                     <li>Completed major shipment on target and ahead of sales plans</li>
+                     <li>Selling wholesale to major brands and retailers worldwide</li>
+                     <li>Creating shipping schedules and packing lists</li>
+                     <li>Booking orders and stock control</li>
+                   </ul>
+                 </td>
+               </tr>
+               <tr>
+                 <td>
+                   <h4>Oct 2014 - Feb 2017<br/>
+                     Blacks.co.uk - JD Sports Fashion</h4>
+                   <h5>Online Assistant Merchandiser</h5>
+                     <ul>
+                       <li>Improving product taxonomy, categorisation, online menus and SEO, which helped raise successful
+                         product searches and conversion rates by 2% over 3 months</li>
+                       <li>Processing stock control orders for the website and reporting on sales, stock, customer interaction
+                         and team progress</li>
+                       <li>Managing on-site recommendations and visual merchandising</li>
+                       <li>Organising and streamlinging work for a team of copy writers</li>
+                     </ul>
+                   </td>
+                 </tr>
+                 <tr>
+                   <td>
+                     <h4>Apr 2013 - Oct 2014<br/>
+                     Missguided.co.uk</h4>
+                     <h5>Web Coordinator</h5>
+                       <ul>
+                         <li>Overseeing and streamlining workload for a team of copywriters</li>
+                         <li>Management of Magento E-commerce platform, improving product categorisation helping boost CTR (click through rate)</li>
+                         <li>Troubleshooting and implementation of new processes and systems</li>
+                         <li>Copy writing, USP highlighting and photography checks</li>
+                         <li>Promoted from Product Copywriter</li>
+                       </ul>
+                   </td>
+                 </tr>
+               </table>
+               <hr>
+               <div class="see-more-tab" id="seeMoreWork">
+                 v See More v
+               </div>
+               <div id="hideWork" class="hidden" style="display:none">
+              <table>
+                 <tr>
+                   <td>
+                     <h4>Jul 2012 - Jul 2012<br/>
+                     Boohoo.com</h4>
+                     <h5>Freelance Editor</h5>
+                       <ul>
+                         <li>Part time freelance product photography editing</li>
+                       </ul>
+                   </td>
+                  </tr>
+                  <tr>
+                    <td>
+                     <h4>Jun 2012 - Apr 2013<br/>
+                       Pumpkin Café</h4>
+                     <h5>Barista</h5>
+                   </td>
+                  </tr>
+                  <tr>
+                     <td>
+                       <h4>Mar 2012 - May 2012<br/>
+                       PrettyLittleThing.com</h4>
+                       <h5>Freelance Photographer</h5>
+                           <ul>
+                             <li>Photographing products</li>
+                             <li>Implemented new stock control system</li>
+                             <li>Styling marketing campaigns</li>
+                             <li>Management of Magento Ecommerce Platform</li>
+                           </ul>
+                     </td>
+                   </tr>
+                   <tr>
+                     <td>
+                       <h4>Jan 2012 - Mar 2012<br/>
+                         Boohoo.com</h4>
+                       <h5>Social Networking Advisor</h5>
+                         <ul>
+                           <li>Providing customers with styling tips and general customer services through social media</li>
+                          </ul>
+                      </td>
+                    </tr>
+                   <tr>
+                     <td>
+                       <h4>Aug 2011 - Dec 2011<br/>
+                           Caffe Ritazza</h4>
+                      <h5>Senior Barista</h5>
+                    </td>
+                   </tr>
+                   <tr>
+                     <td>
+                       <h4>Sep 2010 - Nov 2010<br/>
+                       The UK's Big Fashion Events</h4>
+                       <h5>Head of Promotion and Recruitment</h5>
+                         <ul>
+                           <li>Marketing for main event through social media and flyering</li>
+                           <li>Organising rental of stalls, managing the intake of money and providing details to participants</li>
+                           <li>Selecting models for shows</li>
+                         </ul>
+                     </td>
+                   </tr>
+                   <tr>
+                     <td>
+                       <h4>Jun 2006 - Sep 2010<br/>
+                     Various High Street Retailers</h4>
+                     <h5>Sales Assistant & Visual Merchandiser</h5>
+                       <ul>
+                         <li>Visual Merchandising and window dressing</li>
+                         <li>Sales and customer service.</li>
+                         <li>Store card sales and processing</li>
+                       </ul>
+                     </td>
+                   </tr>
+                 </div>
+          </table>
+        </div>
+        <!-- end of work box -->
+      </div>
+      </div>
+      <!-- training box -->
+      <div class="training-box card" id="train">
+        <div class="train-title card-title">
+          <h3>Training</h3>
+        </div>
+        <div class="train-table card-table">
+          <table>
+            <tr>
+              <td>
+                <!-- <p> -->
+                <h4>Google Developer Challenge Scholarship: Front-End Web Dev<br/>
+                  Feb 2018 - Dec 2018</h4>
+                  <h5>Udacity Certifications</h5>
+                <h6>HTML5 Canvas editing</h6>
+                  Everything you need to know about HTML5 canvas editing, meme generators, editing simple apps etc.
+                <h6>How to Make an IOS App</h6>
+                  How to build an IOS App
+                <h6>AutoLayout</h6>
+                  How to create auto layouts that are reactive to different types of media.
+                <h6>Interactive 3D Graphics</h6>
+                  How to create 3D Interactive websites and graphics<br/>
+                </p><p>
+                  <h6>Intermediate Excel - QA Training - 2016</h6>
+                    Completed an intermediate Excel training course with QA training in Manchester, covering the basics of Excel plus tables, graphs, pivot tables, references and quick tools.
+                  <h6>SEO basics training – JD Sports 2016</h6>
+                    In house training received whilst working at JD Sports PLC, covering the basics of optimising webpages and products for search engines, both internally and externally.
+                  <h6>Google Analytics Basics – JD Sports 2016</h6>
+                    In house training received whilst working at JD Sports PLC, covering the basics of using Google Analytics to review sales, customer journeys, SEO, website structures and much more.
+                  <h6>Mindfulness Course – 2015/16</h6>
+                    Completed a course on mindfulness meditation ran by a charity group within the NHS. We learned about how mindfulness can help anyone live a “peaceful” life, with more control over their emotions and reactions.
+                <!-- </p> -->
               </td>
             </tr>
           </table>
         </div>
-      </div> -->
-    <!-- </div> -->
-  </div>
-  <!-- end of main area -->
-</main>
+      </div>
+      <!-- education box -->
+      <div class="education-box card" id="edu">
+        <div class="edu-title card-title">
+          <h3>Education<h3>
+        </div>
+        <div class="edu-table card-table">
+          <table>
+            <tr>
+              <td>
+                <h5>BA (HONS) Fashion Styling & Image Making – The University of Salford, 2008-2011 - Degree Classification - 2:1</h5>
+                  At the University of Salford, I learned all about the fashion business, from fast fashion to haute couture. I am trained to a
+                  professional level of photography and fashion styling. I also studied the basics of fashion design and pattern cutting.
+                <h5>Photoshop 101 course</h5>
+                  Photography editing, airbrushing and basic graphic design.
+                <h5>Art Foundation Degree – The University of Salford 2007</h5>
+                	Completed an art foundation degree, studying classic art, digital media, mixed media, fashion design and styling,
+                  pattern cutting, graphics, sculpture and many more types of art.
+                <h5>The Whitby High School Ellesmere Port</h5>
+                  A-Levels<br/>
+                  Four A-Levels in grades B and C.<br/>
+                  GCSEs<br/>
+                  Eleven GCSEs in grades B and C.
+              </td>
+            </tr>
+          </table>
+      </div>
+    </div>
+    <!-- end of education box -->
+    <!-- me box -->
+    <div class="me-box card" id="me">
+      <div class="me-title card-title">
+        <h3>Hobbies and Interests<h3>
+      </div>
+        <table class="me-table card-table">
+          <tr>
+            <td>
+              In my spare time, I enjoy a lot of walking outdoors, exercising and meditating. I love to go on hikes up small mountains or hills, enjoying the wilderness and the views. I am very passionate about environmental issues and animal welfare, and endeavour to raise awareness however I can. I participate in nature counts whenever I can and like to visit my local woods at dusk to watch the bats. I practise mindful meditation every day which helps me to focus my mind in busy situations. I also own a full UK driving licence.
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!-- end of column 1 -->
+      </div>
+      <!-- end of me box -->
+      <div class="right-sidebar-container">
+        <div class="highlight card">
+          <a href="https://rhovell.github.io/park-finder/" title="Park Finder" target="_blank">
+            <div class="highlight-image-container">
+              <img class="highlight-image" src="img/websites/parks.jpg">
+            </div>
+            <div class="highlight-title">
+              <h4>Park Finder</h4>
+              <h5>React App</h5>
+            </div>
+          </a>
+        </div>
+        <div class="highlight card">
+          <a href="https://rhovell.github.io/mws-restaurant-stage-1/" title="Restaurant Reviews" target="_blank">
+            <div class="highlight-image-container">
+              <img class="highlight-image" src="img/websites/restaurants.jpg">
+            </div>
+            <div class="highlight-title">
+              <h4>Restaurant Reviews</h4>
+              <h5>React App</h5>
+            </div>
+          </a>
+        </div>
+        <div class="highlight card">
+          <a href="https://rhovell.github.io/save-the-bugs/" title="Save The Bugs Game" target="_blank">
+            <div class="highlight-image-container">
+              <img class="highlight-image" src="img/websites/bugs.jpg">
+            </div>
+            <div class="highlight-title">
+              <h4>Save The Bugs!</h4>
+              <h5>JavaScript Game</h5>
+            </div>
+          </a>
+        </div>
+        <div class="highlight card">
+          <a href="https://rhovell.github.io/memory-game/" title="Memory Game" target="_blank">
+            <div class="highlight-image-container">
+              <img class="highlight-image" src="img/websites/match.jpg">
+            </div>
+            <div class="highlight-title">
+              <h4>Memory Game</h4>
+              <h5>JavaScript Game</h5>
+            </div>
+          </a>
+        </div>
+        <div class="highlight card">
+          <a href="https://rhovell.github.io/save-the-bugs/" title="Save The Bugs Game" target="_blank">
+            <div class="highlight-image-container">
+              <img class="highlight-image" src="img/websites/bugs.jpg">
+            </div>
+            <div class="highlight-title">
+              <h4>Save The Bugs!</h4>
+              <h5>JavaScript Game</h5>
+            </div>
+          </a>
+        </div>
+      </div>
+
 
 <!-- footer -->
 <footer>
-
-<!-- end of footer -->
+  <hr class="foot-hr">
+    <div class = "foot">
+       <p class = "foottext">
+         Website designed and built by
+         <a href="#about" title = "Rachel's Eco Design">
+           Rachel's Eco Design</a>
+         <br>Web design that raises awareness of environmental issues and charities.
+       </p>
+      <div class = "column col-1">
+        <div class = "nav-bar">
+         <h4>Site Navigation</h4>
+         <div class = "footer-site-links">
+           <ul>
+            <li><a href="home.html" target="iframe_a" class="foot-link" title="About Rachel's Web Design">Home</a></li>
+            <li><a href="web.html" target="iframe_a" class="foot-link" title="Web Design Portfolio">Web Design</a></li>
+            <li><a href="graphic.html" target="iframe_a" class="foot-link" title="Graphic Design Portfolio">Graphic Design</a></li>
+            <li><a href="contact.html" target="iframe_a" class="foot-link" title="Contact">Contact</a></li>
+           </ul>
+         </div>
+        </div>
+      </div>
+       <!--
+       professional links
+     -->
+    <div class = "column col-2">
+      <div class = "pro-bar">
+        <h4 class = "pro-links">Rachel's Eco Design</h4>
+        <div class = "linked in logo">
+          <a href = "https://www.linkedin.com/in/rachel-hovell/" target="_blank" rel="noopener" title="Rachel Hovell on Linked In">
+          <img src = "img/social/linkedin.png" alt = "LinkedIn">
+          </a>
+        </div>
+        <div class = "codepen logo">
+          <a href = "https://codepen.io/Rhovell/#" target="_blank" rel="noopener" title="Rachel Hovell on Codepen">
+          <img src = "img/social/codepen.png" alt = "Codepen">
+          </a>
+        </div>
+        <div class = "github logo">
+          <a href = "https://github.com/rhovell" target="_blank" rel="noopener" title="Rachel Hovell on GitHub">
+          <img src = "img/social/github.png" alt = "Git Hub">
+          </a>
+        </div>
+        <div class = "facebook logo">
+          <a href = "https://www.facebook.com/rachelswebdesign/" target="_blank" rel="noopener" title="Rachel's Web Design on Facebook">
+          <img src = "img/social/facebook.png" alt = "Rachel's Web Design on Facebook">
+          </a>
+        </div>
+      </div>
+    </div>
+      <!--
+      social links
+      -->
+      <div class = "column col-3">
+        <div class = "soc-bar">
+          <h4 class = "soc-links">Rainbow Rach Designs</h4>
+        <div class = "fb logo">
+          <a href = "https://www.facebook.com/RainbowRachDesigns" target="_blank" rel="noopener" title="Rainbow Rach on Facebook">
+          <img src = "img/social/facebook.png" alt = "Rainbow Rach Design's on Facebook">
+          </a>
+        </div>
+        <div class = "twitter logo">
+          <a href = "https://twitter.com/RainbowRach_" target="_blank" rel="noopener" title="Rainbow Rach on Twitter">
+          <img src = "img/social/twitter.png" alt = "Rainbow Rach Designs on Twitter">
+        </a>
+        </div>
+        <div class = "zazzle logo">
+          <a href = "https://www.zazzle.co.uk/rainbow_rach_designs/" target="_blank" rel="noopener" title="Zazzle Shop">
+            <img src = "img/social/zazzle-z.png" alt = "Zazzle Shop">
+          </a>
+        </div>
+        <div class = "wordpress logo">
+          <a href = "https://rachelhovelldesigns.wordpress.com/" target="_blank" rel="noopener" title="Wordpress Blog">
+            <img src = "img/social/wordpress.png" alt = "Wordpress Blog">
+          </a>
+        </div>
+        <div class = "instagram logo">
+          <a href = "https://www.instagram.com/rainbowrach/" target="_blank" rel="noopener" title="Rainbow Rach on instagram">
+            <img src = "img/social/instagram.png" alt = "Rainbow Rach on instagram">
+          </a>
+        </div>
+        <div class="society6 logo">
+          <a href="https://society6.com/rachelhovell" target="_blank" rel="noopener" alt="Society6" title="Society6">
+          <img src="img/social/society6.png" class="logo s" alt="Rainbow Rach Designs on Society6" title="Rainbow Rach Designs"></a>
+        </div>
+      </div>
+    </div>
+    <div class = "copyright-area">
+        Websites, games, photography, graphic design pieces and brand logos are all subject to copyright
+        Rachel's Eco Design or Rainbow Rach Designs 2018. Social logos from various web sources.
+    </div>
+  </div>
+    <!--************************************************************************************-->
+    <!--
+    end of footer
+  -->
 </footer>
+  <!-- end of main area -->
+</main>
 <!-- javaScript files  -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/jscript" src = "java/java.js"></script>
+<script type="text/jscript" src = "java/app.js"></script>
 </body>
 </html>

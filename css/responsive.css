@@ -1,210 +1,43 @@
-@media screen and (min-width:425px){
+@media screen and (min-width:560px){
 
-    body {
-      font-size: 1em;
+    .page-select button {
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+      width: 3.5em;
     }
-
-    .foot {
-      display: grid;
-      flex-wrap: wrap;
-      grid-template-columns: 30% 30% 39%;
+    .contact-info {
+      left: 75%;
     }
-
-    .footText {
-      padding-left: 10px;
-      grid-column-start: 1;
-      grid-column-end: 4;
-      }
-
-    .proLinks {
-      grid-column-start: 1;
-      grid-column-end: 4;
-      grid-row-start: 2;
-      grid-row-end: 3;
+    .contact.show {
+      left: 5%;
     }
-
-    .LinkedInLogo {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 3;
-      grid-row-end: 4;
+    .profile-links {
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 5%;
     }
-
-    .CodepenLogo {
-      grid-column-start: 2;
-      grid-column-end: 4;
-      grid-row-start: 3;
-      grid-row-end: 4;
-    }
-
-    .socialLinks {
-      grid-column-start: 1;
-      grid-column-end: 4;
-      grid-row-start: 4;
-      grid-row-end: 5;
-    }
-
-    .FBlogo1 {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 5;
-      grid-row-end: 6;
-    }
-
-    .twitterLogo {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 5;
-      grid-row-end: 6;
-    }
-
-    .society6Logo {
-      grid-column-start: 3;
-      grid-column-end: 4;
-      grid-row-start: 5;
-      grid-row-end: 6;
-    }
-
-/*
-
-skills section grid positioning
-
-*/
-    .skills {
-      display: grid;
-      flex-wrap: wrap;
-      /* text-align: left; */
-      grid-template-columns: 33% 33% 33%;
-      padding: 0;
-    }
-
-    .skills div {
-      border-right: 1px dashed black;
-      border-bottom: 0;
-      }
-
-      .skills div:last-of-type {
-        border-right: none;
-        padding-right: 0;
-
-      }
-
-    .skillset1 {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 1;
-      grid-row-end: 2;
-    }
-
-    .skillset2 {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 2;
-    }
-
-    .skillset3 {
-      grid-column-start: 3;
-      grid-column-end: 4;
-      grid-row-start: 1;
-      grid-row-end: 2;
-    }
-    /* employment styling */
-    .date {
-    font-size: 1.2em;
-    }
-
-    .company {
-      font-size: 1.2em;
-
-    }
-
-    .role {
-      font-size: 1.2em;
-
-    }
-
-    .jobDesc {
-      font-size: 1em;
-
-    }
-    .note {
-      font-size: 1em;
-    }
-
-    .noteA {
-      font-size: 1em;
+    .see-more-tab {
+      left: 0;
     }
   }
-/* end of min-width 435 */
-
-  @media screen and (min-width:768px){
-  .foot {
+@media screen and (min-width:700px){
+  .card {
+    width: 90%;
+  }
+  .page-holder {
     display: grid;
-    flex-wrap: wrap;
-    grid-template-columns: 54% 10% 15% 20%;
+    grid-template-columns: 70% 30%;
   }
-
-  .footText {
-    padding-left: 10px;
-    grid-column-start: 1;
-    grid-column-end: 5;
-    }
-
-  .proLinks {
-    grid-column-start: 1;
-    grid-column-end: 2;
+  .highlight {
+    left: 0;
+  }
+  .social-link.long {
     grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
-  .LinkedInLogo {
     grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
-  .CodepenLogo {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
-  .socialLinks {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
-
-  .FBlogo1 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
-
-  .twitterLogo {
-    grid-column-start: 3;
     grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
-
-  .society6Logo {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
 }
-
-
-@media screen and (min-width:1024px){
-  body {
-    margin-left: auto;
-    margin-right: auto;
+  .profile-links {
+    grid-template-columns: 33% 33% 33%;
   }
 }

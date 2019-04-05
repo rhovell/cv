@@ -1,0 +1,213 @@
+/*
+footer styling
+*/
+footer {
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  grid-column-end: 3;
+  grid-column-start: 1;
+  padding-top: 1em;
+  font-size: 14px;
+}
+.foot {
+  margin-top: 1em;
+  text-align: center;
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: 33% 33% 33%;
+}
+.foottext {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.copyright-area {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  padding: 1em;
+}
+.column {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.foot-hr {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(98, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.foot a:link {
+  text-decoration: none;
+  color: #620000;
+  font-weight: bold;
+}
+.foot ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
+}
+.foot li {
+  padding-bottom: 15px;
+  text-align: center;
+}
+.pro-bar, .soc-bar {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  flex-wrap: wrap;
+}
+.pro-bar h4, .soc-bar h4, .nav-bar h4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  padding: 5px;
+}
+.nav-bar {
+  display: grid;
+  grid-template-columns: 100%;
+  flex-wrap: wrap;
+}
+.nav-bar h4 {
+  margin-bottom: 30px;
+}
+.soc-bar h4 {
+  /* margin-bottom: 1em; */
+}
+.RWDlogo-foot {
+  height: 3em;
+  vertical-align: middle;
+}
+/*
+social logos
+*/
+.logo {
+  margin: 1em;
+  display: inline;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  align-self: center;
+}
+.logo img {
+  width: 2em;
+}
+.society6.logo {
+  margin: 0;
+}
+.society6.logo img {
+  width: 65px;
+  margin: 0;
+}
+/*
+grid positioning
+*/
+.linked.in.logo {
+  grid-column-start: 2;
+}
+.facebook.logo {
+  grid-column-start: 1;
+}
+.codepen.logo {
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+.github.logo {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+.fb.logo {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+.twitter.logo {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+.zazzle.logo {
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+.wordpress.logo {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+.instagram.logo {
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+.society6.logo {
+  grid-column-start: 2;
+  grid-row-start: 4;
+}
+@media screen and (min-width: 800px){
+  /*
+  footer social logos grid positioning
+  */
+  .logo img {
+    width: 3em;
+  }
+  .society6.logo img {
+    width: 85px;
+  }
+  .pro-bar, .soc-bar {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+  .pro-bar h4, .soc-bar h4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+  }
+  .nav-bar h4 {
+    margin-bottom: 10px;
+  }
+  .linked.in.logo {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+  .facebook.logo {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+  .codepen.logo {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+  .github.logo {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+  }
+  .fb.logo {
+    margin-top: auto;
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+  .twitter.logo {
+    grid-column-start: 2;
+    margin-top: auto;
+    grid-row-start: 2;
+  }
+  .zazzle.logo {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+  .wordpress.logo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+  }
+  .instagram.logo {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+  }
+  .society6.logo {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+  }
+}
+}
