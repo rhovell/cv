@@ -45,6 +45,7 @@ a:link {
   color: #620000;
   background-color: transparent;
   text-decoration: none;
+  cursor: pointer;
 }
 a:visited {
   color: #620032;
@@ -214,22 +215,30 @@ ul.contact-list {
   width: 225px;
   border: 1px solid #000000;
   position: absolute;
-  top: 15.5%;
+  top: 130px;
   right: 2%;
   z-index: 90;
+  height: min-content;
 }
 .profile-links {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 33% 33% 33%;
   /* padding-left: 5%; */
   position: relative;
   bottom: 60px;
   align-items: center;
   cursor: pointer;
 }
-.social-link.long {
+.social-link.centre {
   grid-column-start: 1;
   grid-column-end: 3;
+  text-align: center;
+  grid-row-start: 2;
+}
+.social-link.long {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-column-end: 4;
   text-align: center;
 }
 .social-link {
@@ -237,9 +246,12 @@ ul.contact-list {
   text-align: center;
   vertical-align: middle;
 }
-.logo {
+.logo-image {
   width: 2em;
   vertical-align: middle;
+}
+.logo-image.long {
+  width: 3em;
 }
 .profile-intro {
   padding: 15px;

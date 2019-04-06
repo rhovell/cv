@@ -9,7 +9,8 @@
       left: 75%;
     }
     .contact.show {
-      left: 5%;
+      right: 4%;
+      /* top: 130px; */
     }
     .profile-links {
       max-width: 600px;
