@@ -1,4 +1,4 @@
-# Rachel Hovell - Stockport UK - CV
+# Rachel Hovell - Stalybridge UK - CV
 ## Front-End Web Developer and Graphic Designer
 
 Please see https://rhovell.github.io/cv/ to view my CV.
