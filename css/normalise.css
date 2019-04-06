@@ -176,6 +176,7 @@ styling
   left: 20px;
   border-radius: 360px;
   box-shadow: 1px 1px 5px #ccc;
+  height: 150px;
 }
 .profile-picture img {
   width: 150px;
