@@ -146,7 +146,7 @@ styling
   border-bottom: 1px solid #ccc;
   height: 150px;
   box-shadow: 0 0 5px #ccc;
-  background-image: url("/img/main/branding/tree-background.jpg");
+  background-image: url("../img/main/branding/tree-background.jpg");
   background-size: cover;
 
 }
