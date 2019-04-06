@@ -10,6 +10,7 @@ $("#seeMoreIntro").click(function() {
      $("#hideElements").show();
    }
   });
+  var body = document.getElementsByName('body');
 var contactInfo = document.getElementById('contactInfo');
 var contact = document.getElementById('contact');
 contactInfo.onmouseover = function(){
@@ -23,6 +24,14 @@ contact.onmouseover = function(){
 }
 contact.onmouseout= function(){
   contact.className = "contact";
+}
+contact.onclick = function(){
+  contact.className = "contact show";
+}
+if(contact.className = "contact show"){
+  body.onclick = function(){
+    contact.className = "contact";
+  }
 }
 
 // show and hide work exp
